@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(method='post', enctype='multipart/form-data')
+    input(type='text', name='lab_name', placeholder='Lab Name')
+    label output:
+    input(type='file', name='output', value='Intended Output')
+    label new runner:
+    input(type='file', name='runner', value='New Runner')
+    input(type='submit')
